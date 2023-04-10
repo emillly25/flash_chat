@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
+  static String id = 'login';
   @override
   _LoginScreenState createState() => _LoginScreenState();
 }
@@ -84,6 +85,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: MaterialButton(
                   onPressed: () {
                     //Implement login functionality.
+                    Navigator.pushNamed(context, LoginScreen.id);
                   },
                   minWidth: 200.0,
                   height: 42.0,
